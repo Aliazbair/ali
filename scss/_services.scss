@@ -1,0 +1,44 @@
+.services {
+  // services-data
+  .services-data {
+    padding: 3rem 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 4px 6px rgba(174, 190, 2015, 0.3);
+
+    &:hover {
+      transform: translateY(-0.5rem);
+      box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
+    }
+  }
+  .services-icon {
+    font-size: 3rem;
+  }
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .services-icon,
+  .services-title {
+    margin-bottom: $mb-2;
+    color: $first-color;
+  }
+
+  // services-description
+  .services-description {
+    margin-bottom: $mb-4;
+  }
+
+  @media screen and (min-width: 576px) {
+    .services-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 768px) {
+  .services-container{
+    grid-template-columns: repeat(3,1fr);
+  }
+ }
+}

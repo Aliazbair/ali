@@ -1,0 +1,52 @@
+.about{
+    margin: 1rem;
+    
+    // about data
+    .about-data{text-align: center;}
+
+    // about description
+    .about-description span{
+        font-size: 2rem;
+        font-weight: $semi-bold;
+        color: $first-color;
+    }
+
+    // about number
+    .about-number{
+       font-size: 1.5rem; 
+       color: rgb(61, 115, 201);
+       display: block;
+    }
+    // about-achievement
+    .about-achievement{
+        color: rgb(143, 219, 113);
+    }
+    .about-img{
+        justify-self: center;
+        width: 220px;
+        border-radius: .5rem;
+    }
+
+    @media screen and (min-width: 576px) {
+        .about-container{
+            grid-template-columns: repeat(2,1fr);
+
+            .about-img{
+                width: 100%;
+                object-fit: cover;
+                height: 80%;
+            }
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+          .about-description{
+              text-align: initial;
+            //   color: red;
+          }
+
+          .about-img{
+              width: 300px;
+          }
+      }
+}

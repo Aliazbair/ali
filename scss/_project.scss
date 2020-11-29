@@ -1,0 +1,48 @@
+.project{
+
+  
+    .project-container{
+        padding: 1.5rem 1rem;
+        background-color: $first-color-dark;
+        color: $first-color-lighten;
+        border-radius: .5rem;
+        text-align: center;
+        // padding: 2rem;
+    }
+
+        .project-icon,.project-title{
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            
+            
+        }
+
+        // project description
+        .project-description{
+            margin-bottom: $mb-4;
+        }
+       
+
+    @media screen and (min-width: 768px) {
+        .project-container{
+          padding: 3.5rem 0;
+          .project-data{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+          }
+            .project-icon,.project-title,.project-description{
+                margin-bottom: 0rem;
+            }
+            .project-icon{
+                font-size: 4rem;
+            }
+            .project-title{
+                font-size: 1.5rem;
+            }
+        }
+        
+        }
+    }
+        
+       

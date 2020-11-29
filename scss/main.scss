@@ -1,0 +1,251 @@
+@import 'colors';
+@import 'font';
+@import 'margin';
+@import 'navbar';
+@import 'home';
+@import 'about';
+@import 'qualification';
+@import 'services';
+@import 'project';
+@import 'portfolio';
+@import 'testimonial';
+@import 'contact';
+@import 'footer';
+
+// base
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 3rem 0 0 0;
+  font-size: $xxl;
+  font-weight: $medium;
+  background-color: $first-color-lighten;
+  color: $text-color;
+  line-height: 1.6;
+}
+h2,
+h2 {
+  font-weight: $semi-bold;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+// classes
+.section {
+  padding: 4rem 0 2rem;
+}
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+.section-title {
+  font-size: 2rem;
+  color: $first-color;
+  margin-bottom: $mb-3;
+}
+.section-subtitle {
+  display: block;
+  font-size: $sm;
+  font-weight: $semi-bold;
+  text-align: center;
+}
+
+// layout
+
+.bd-container {
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  // background-color:red;
+  margin-left: $mb-2;
+  margin-right: $mb-2;
+}
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.l-header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: $z-fixed;
+  background-color: #000;
+}
+.scroll-header {
+  background-color: $first-color-lighten;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .nav-logo,
+  .nav-link, .nav-toggle {
+    color: #333;
+  }
+  .nav-menu {
+   
+  .nav-link{
+    color: #333;
+  }
+ 
+  }
+}
+
+// scrolltop
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  background-color: rgba(123, 111, 113, 0.7);
+  border-radius: 0.5rem;
+  z-index: $z-tooltip;
+  transition: 0.4s;
+  visibility: hidden;
+
+  &:hover {
+    background-color: $first-color;
+  }
+  .scrolltop-icon {
+    font-size: 1.4rem;
+    color: $first-color-lighten;
+  }
+  &.show-scroll {
+    visibility: visible;
+    bottom: 1.5rem;
+  }
+}
+
+// button
+.btn {
+  display: inline-block;
+  background-color: $first-color;
+  color: $first-color-lighten;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  // font-size: 2rem;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $first-color-dark;
+  }
+  &.btn-light {
+    background-color: $first-color-light;
+  }
+  &.btn-white {
+    background-color: $first-color-lighten;
+    color: $first-color-dark;
+
+    &:hover {
+      background-color: $first-color-light;
+    }
+  }
+  &.btn-link {
+    background-color: transparent;
+    color: $first-color;
+    padding: 0;
+
+    &:hover {
+      background-color: none;
+    }
+  }
+}
+
+// swiper
+.swiper-pagination {
+  position: initial;
+
+  .swiper-pagination-bullet-active {
+    background-color: rgb(8, 69, 119);
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .section {
+    padding-top: 6rem;
+  }
+  .section-title {
+    margin-bottom: $mb-5;
+  }
+
+  .nav {
+    height: calc(3rem + 1.5rem);
+
+    .nav-list {
+      display: flex;
+
+      // nav-item
+      .nav-item {
+        margin-left: $mb-5;
+        margin-right: $mb-1;
+        margin-bottom: 0;
+        .nav-link {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .nav-toggle {
+      display: none;
+    }
+  }
+
+  .home {
+    .home-container {
+      height: 100vh;
+      grid-template-rows: max-content 0.5fr;
+      align-content: flex-end;
+
+      .home-data {
+        .home-greeting {
+          font-size: 1.25rem;
+        }
+        .home-profession{
+          font-size: 2rem;
+        }
+
+        
+      }
+      .home-social{
+        flex-direction: row;
+        align-items: center;
+
+        .home-social-icon{
+          margin-right: $mb-4;
+          margin-bottom: 0;
+        }
+      }
+
+      .home-img{
+        width: 440px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bd-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
