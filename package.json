@@ -1,0 +1,25 @@
+{
+  "name": "protfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage":"https://github.com/Aliazbair/ali",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy":"gh-pages -d "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aliazbair/ali.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aliazbair/ali/issues"
+  },
+  "homepage": "https://github.com/Aliazbair/ali#readme",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
