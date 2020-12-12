@@ -115,7 +115,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: .5rem;
-  background-color: rgba(123, 111, 113, 0.7);
+  background-color: rgba(235, 29, 63, 0.7);
   border-radius: 0.5rem;
   z-index: $z-tooltip;
   transition: 0.4s;
@@ -175,6 +175,7 @@ img {
 
   .swiper-pagination-bullet-active {
     background-color: rgb(8, 69, 119);
+ 
   }
 }
 @media screen and (min-width: 768px) {

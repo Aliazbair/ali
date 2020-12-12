@@ -1,7 +1,7 @@
 .nav{
     height: 3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 
 
@@ -38,11 +38,14 @@
             text-align: center;
             background-color: #000;
             transition: .4s;
-            box-shadow: 0 20px 4px rgba(0,0,0,.1);
+            box-shadow: 0 20px 4px rgba(0, 0, 0, 0.767);
             border-radius: 0 0 1rem 1rem;
+            opacity: 0;
         }
         .show-menu{
-            top:3rem
+            top:3rem;
+            opacity: 1;
+          
         }
         .active-link{
             position: relative;
