@@ -427,6 +427,7 @@
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+  margin-top: 1rem;
 }
 
 .contact .contact-container .contact-content .contact-box .contact-title, .contact .contact-container .contact-content .contact-box .contact-icon {
