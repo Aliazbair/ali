@@ -251,6 +251,7 @@
   text-align: center;
   transition: 0.4s;
   box-shadow: 0 4px 6px rgba(174, 190, 255, 0.3);
+  margin-top: 1rem;
 }
 
 .services .services-data:hover {
@@ -325,6 +326,10 @@
   }
 }
 
+.portfolio {
+  margin-bottom: 2rem;
+}
+
 .portfolio .portfolio-nav {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -337,7 +342,7 @@
 
 .portfolio .portfolio-content {
   background-color: #fff;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
 }
@@ -348,7 +353,7 @@
 
 .portfolio .portfolio-img {
   width: 100%;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .portfolio .portfolio-img:hover {
@@ -594,7 +599,7 @@ img {
 
 .bd-grid {
   display: grid;
-  gap: 1.5rem;
+  grid-gap: 1.5rem;
 }
 
 .l-header {
