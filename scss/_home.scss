@@ -1,5 +1,5 @@
 .home{
-    background-color: #000;
+    background-color: $dark;
     overflow: hidden;
     .home-container{
         position: relative;
@@ -12,7 +12,7 @@
 
         // home-data
         .home-data{
-            border-left: 4px solid $first-color-lighten;
+            border-left: 4px solid  $text-white;
             padding-left: 1.5rem;
             z-index: $z-tooltip;
            margin-left: .50rem;
@@ -56,10 +56,10 @@
                 width: max-content;
                 font-size: 1.3rem;
                 margin-bottom: $mb-2;
-                color: $first-color-lighten;
+                color:  $text-white;
                 padding-left: .80rem;
                 &:hover{
-                   color: $first-color-light; 
+                   color:  $text-white; 
                 }
             }
         }

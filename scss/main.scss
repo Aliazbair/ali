@@ -28,8 +28,8 @@ body {
   margin: 3rem 0 0 0;
   font-size: $xxl;
   font-weight: $medium;
-  background-color: $first-color-lighten;
-  color: $text-color;
+  background-color: $dark;
+  color: $text-white;
   line-height: 1.6;
 }
 h2,
@@ -58,7 +58,7 @@ img {
 }
 .section-title {
   font-size: 2rem;
-  color: $first-color;
+  color: $text-white;
   margin-bottom: $mb-3;
 }
 .section-subtitle {
@@ -87,22 +87,22 @@ img {
   left: 0;
   top: 0;
   z-index: $z-fixed;
-  background-color: #000;
+  background-color: $dark;
 }
 .scroll-header {
-  background-color: $first-color-lighten;
+  background-color: $text-white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   .nav-logo,
-  .nav-link, .nav-toggle {
-    color: #333;
+  .nav-link,
+  .nav-toggle {
+    color: $text-dark;
   }
   .nav-menu {
-   
-  .nav-link{
-    color: #333;
-  }
- 
+    background-color: #fff;
+    .nav-link {
+      color: $text-dark;
+    }
   }
 }
 
@@ -114,7 +114,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .5rem;
+  padding: 0.5rem;
   background-color: rgba(235, 29, 63, 0.7);
   border-radius: 0.5rem;
   z-index: $z-tooltip;
@@ -122,11 +122,11 @@ img {
   visibility: hidden;
 
   &:hover {
-    background-color: $first-color;
+    background-color: $text-white;
   }
   .scrolltop-icon {
     font-size: 1.4rem;
-    color: $first-color-lighten;
+    color: $text-white;
   }
   &.show-scroll {
     visibility: visible;
@@ -137,30 +137,30 @@ img {
 // button
 .btn {
   display: inline-block;
-  background-color: $first-color;
-  color: $first-color-lighten;
+  background-color: $dark;
+  color: $text-white;
   padding: 0.75rem;
   border-radius: 0.25rem;
   // font-size: 2rem;
   transition: 0.3s;
 
   &:hover {
-    background-color: $first-color-dark;
+    background-color: $dark;
   }
   &.btn-light {
-    background-color: $first-color-light;
+    background-color: $text-white;
   }
   &.btn-white {
-    background-color: $first-color-lighten;
-    color: $first-color-dark;
+    background-color: $text-white;
+    color: $dark;
 
     &:hover {
-      background-color: $first-color-light;
+      background-color: $text-white;
     }
   }
   &.btn-link {
     background-color: transparent;
-    color: $first-color;
+    color: $text-white;
     padding: 0;
 
     &:hover {
@@ -175,7 +175,6 @@ img {
 
   .swiper-pagination-bullet-active {
     background-color: rgb(8, 69, 119);
- 
   }
 }
 @media screen and (min-width: 768px) {
@@ -220,23 +219,21 @@ img {
         .home-greeting {
           font-size: 1.25rem;
         }
-        .home-profession{
+        .home-profession {
           font-size: 2rem;
         }
-
-        
       }
-      .home-social{
+      .home-social {
         flex-direction: row;
         align-items: center;
 
-        .home-social-icon{
+        .home-social-icon {
           margin-right: $mb-4;
           margin-bottom: 0;
         }
       }
 
-      .home-img{
+      .home-img {
         width: 440px;
       }
     }
@@ -244,9 +241,8 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-  .bd-container{
+  .bd-container {
     margin-left: auto;
     margin-right: auto;
   }
 }
-

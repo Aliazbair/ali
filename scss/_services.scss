@@ -2,7 +2,7 @@
   // services-data
   .services-data {
     padding: 3rem 1rem;
-    background-color: #fff;
+    background-color:$lighten;
     border-radius: 0.5rem;
     text-align: center;
     transition: 0.4s;
@@ -24,7 +24,7 @@
   .services-icon,
   .services-title {
     margin-bottom: $mb-2;
-    color: $first-color;
+    color: $text-white;
   }
 
   // services-description

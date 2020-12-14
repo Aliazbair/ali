@@ -8,18 +8,18 @@
     .about-description span{
         font-size: 2rem;
         font-weight: $semi-bold;
-        color: $first-color;
+        color:  $text-white;
     }
 
     // about number
     .about-number{
        font-size: 1.5rem; 
-       color: rgb(61, 115, 201);
+       color:  $text-white;
        display: block;
     }
     // about-achievement
     .about-achievement{
-        color:#1a1b1b;
+        color: $text-white;
     }
     .about-img{
         justify-self: center;

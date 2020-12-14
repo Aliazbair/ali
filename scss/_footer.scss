@@ -1,6 +1,6 @@
 .footer {
-  background-color: $first-color-dark;
-  color: $first-color-lighten;
+  background-color: $lighten;
+  color: $text-white;
   text-align: center;
 
   .footer-container {
@@ -25,21 +25,20 @@
       // footer-link
       .footer-link {
         font-size: 1.4rem;
-        color: $first-color-lighten;
+        color: $text-white;
         margin: 0 $mb-1;
         transition: 0.3s;
 
-        &:hover{
-            color: $first-color-light;
-
+        &:hover {
+          color: $text-white;
         }
       }
     }
 
     // footer-copy
-    .footer-copy{
-        font-size: 1rem;
-        color:$first-color-light ;
+    .footer-copy {
+      font-size: 1rem;
+      color: $text-white;
     }
   }
 }
