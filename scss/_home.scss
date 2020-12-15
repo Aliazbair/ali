@@ -1,5 +1,4 @@
 .home{
-    background-color: $dark;
     overflow: hidden;
     .home-container{
         position: relative;
@@ -7,12 +6,12 @@
         grid-template-rows: repeat(2, max-content);
         align-content: space-around;
         row-gap: 2rem;
-        // background-color:rgba(83, 139, 161, 0.835) ;
+       
         
 
         // home-data
         .home-data{
-            border-left: 4px solid  $text-white;
+            border-left: 4px solid ;
             padding-left: 1.5rem;
             z-index: $z-tooltip;
            margin-left: .50rem;
@@ -33,13 +32,14 @@
         .home-img{
             position: absolute;
             right: 0;
-            bottom: 10px;
+            bottom: 0px;
+          
             
            
 
             img{
-                width: 200px;
-                // height: 200px;
+                width: 200px; 
+                height: auto;
                 border-radius: 10px;
                 overflow: hidden;
             display: block;
@@ -56,10 +56,10 @@
                 width: max-content;
                 font-size: 1.3rem;
                 margin-bottom: $mb-2;
-                color:  $text-white;
+                // color:  $light;
                 padding-left: .80rem;
                 &:hover{
-                   color:  $text-white; 
+                //    color:  $light; 
                 }
             }
         }

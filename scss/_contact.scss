@@ -7,7 +7,8 @@
             
             // contact-box
             .contact-box{
-                background-color: $lighten;
+                background-color: var(--primary-color);
+                color: var(--secondary-color);
                 border-radius: .5rem;
                 padding: 1.5rem;
                 text-align: center;
@@ -16,7 +17,8 @@
 
                 // contact-title & ico
                 .contact-title,.contact-icon{
-                    color:  $text-white;
+                    background-color: var(--primary-color);
+                    color: var(--secondary-color);
                  
                 }
                 .contact-title{
@@ -24,7 +26,8 @@
                     margin: $mb-1;
                 }
                 .contact-icon{
-                    color: $text-white;
+                    background-color: var(--primary-color);
+                    color: var(--secondary-color);
                     font-size: 1.25rem;
                     margin: 0 $mb-1;
                 }
@@ -49,12 +52,15 @@
         .contact-input,.contact-btn{
             outline: none;
             font-size: 1.1rem;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
         }
         .contact-input{
             width: 100%;
             padding: 1rem;
-            border: 2px solid  $text-white;
-            color:  $text-white;
+            border: 2px solid;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
             border-radius: .5rem;
             margin-bottom: $mb-1;
         }
@@ -65,7 +71,7 @@
       
     }
     ::placeholder{
-        color: $text-white;
+        color:$light;
         font-weight: bold;
     }
     @media screen and (min-width:576px) {

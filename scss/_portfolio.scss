@@ -9,18 +9,19 @@
     .portfolio-item {
       margin: 0 $mb-2;
       cursor: pointer;
-      // color: red;
+
     }
   }
   // portfolio-content
   .portfolio-content {
-    background-color:$lighten;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 0.5rem;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+    box-shadow: 0 4px 6px ;
     margin-top: 1rem;
     &:hover {
-      box-shadow: 0 6px 8px rgba(174, 190, 205, 0.3);
+      box-shadow: 0 6px 8px ;
     }
   }
 
@@ -37,18 +38,19 @@
 
     .portfolio-subtitle {
       font-size: 2rem;
-      color:  $text-white;
+      // color:  red;
+      color: var(--secondary-color);
     }
 
     .portfolio-title {
       font-size: 1.5rem;
-      color:  $text-white;
       margin: $mb-2 0;
+      // color: red;
+      color: var(--secondary-color);
     }
   }
 
   .active-portfolio {
-    color: rgb(0, 119, 255);
     font-weight: bold;
   }
   @media screen and (min-width: 576px) {

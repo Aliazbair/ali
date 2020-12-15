@@ -38,7 +38,7 @@
     width: 100%;
     padding-top: 1.5rem;
     text-align: center;
-    background-color: #333;
+    background-color: #000;
     transition: 0.4s;
     box-shadow: 0 20px 4px rgba(0, 0, 0, 0.767);
     border-radius: 0 0 1rem 1rem;
@@ -58,12 +58,11 @@
     left: 0;
     width: 65%;
     height: 3px;
-    background-color: #333;
+    background-color: #000;
   }
 }
 
 .home {
-  background-color: #333;
   overflow: hidden;
 }
 
@@ -76,7 +75,7 @@
 }
 
 .home .home-container .home-data {
-  border-left: 4px solid #fff;
+  border-left: 4px solid;
   padding-left: 1.5rem;
   z-index: 10;
   margin-left: .50rem;
@@ -103,11 +102,12 @@
 .home .home-container .home-img {
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: 0px;
 }
 
 .home .home-container .home-img img {
   width: 200px;
+  height: auto;
   border-radius: 10px;
   overflow: hidden;
   display: block;
@@ -123,12 +123,7 @@
   width: max-content;
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #fff;
   padding-left: .80rem;
-}
-
-.home .home-container .home-social .home-social-icon:hover {
-  color: #fff;
 }
 
 @media screen and (min-width: 576px) {
@@ -148,17 +143,11 @@
 .about .about-description span {
   font-size: 2rem;
   font-weight: 600;
-  color: #fff;
 }
 
 .about .about-number {
   font-size: 1.5rem;
-  color: #fff;
   display: block;
-}
-
-.about .about-achievement {
-  color: #fff;
 }
 
 .about .about-img {
@@ -197,7 +186,6 @@
 
 .qualification .qualification-title {
   font-size: 2rem;
-  color: #fff;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -210,7 +198,7 @@
 
 .qualification .qualification-box {
   padding-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 3px solid;
 }
 
 .qualification .qualification-area {
@@ -248,17 +236,18 @@
 
 .services .services-data {
   padding: 3rem 1rem;
-  background-color: #888282;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: 0.5rem;
   text-align: center;
   transition: 0.4s;
-  box-shadow: 0 4px 6px rgba(174, 190, 255, 0.3);
+  box-shadow: 0 4px 6px;
   margin-top: 1rem;
 }
 
 .services .services-data:hover {
   transform: translateY(-0.5rem);
-  box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
+  box-shadow: 0 6px 8px;
 }
 
 .services .services-icon {
@@ -272,7 +261,6 @@
 .services .services-icon,
 .services .services-title {
   margin-bottom: 1rem;
-  color: #fff;
 }
 
 .services .services-description {
@@ -293,8 +281,8 @@
 
 .project .project-container {
   padding: 1.5rem 1rem;
-  background-color: #888282;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: .5rem;
   text-align: center;
 }
@@ -339,15 +327,16 @@
 }
 
 .portfolio .portfolio-content {
-  background-color: #888282;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+  box-shadow: 0 4px 6px;
   margin-top: 1rem;
 }
 
 .portfolio .portfolio-content:hover {
-  box-shadow: 0 6px 8px rgba(174, 190, 205, 0.3);
+  box-shadow: 0 6px 8px;
 }
 
 .portfolio .portfolio-img {
@@ -365,17 +354,16 @@
 
 .portfolio .portfolio-data .portfolio-subtitle {
   font-size: 2rem;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .portfolio .portfolio-data .portfolio-title {
   font-size: 1.5rem;
-  color: #fff;
   margin: 1rem 0;
+  color: var(--secondary-color);
 }
 
 .portfolio .active-portfolio {
-  color: #0077ff;
   font-weight: bold;
 }
 
@@ -393,8 +381,8 @@
 
 .testimonial .testimonial-content {
   display: grid;
-  background-color: #888282;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: .5rem;
   padding: 2rem 1rem;
   text-align: center;
@@ -424,7 +412,8 @@
 }
 
 .contact .contact-container .contact-content .contact-box {
-  background-color: #888282;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: .5rem;
   padding: 1.5rem;
   text-align: center;
@@ -433,7 +422,8 @@
 }
 
 .contact .contact-container .contact-content .contact-box .contact-title, .contact .contact-container .contact-content .contact-box .contact-icon {
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .contact .contact-container .contact-content .contact-box .contact-title {
@@ -442,7 +432,8 @@
 }
 
 .contact .contact-container .contact-content .contact-box .contact-icon {
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 1.25rem;
   margin: 0 0.5rem;
 }
@@ -461,13 +452,16 @@
 .contact .contact-container .contact-input, .contact .contact-container .contact-btn {
   outline: none;
   font-size: 1.1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .contact .contact-container .contact-input {
   width: 100%;
   padding: 1rem;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: .5rem;
   margin-bottom: 0.5rem;
 }
@@ -490,8 +484,8 @@
 }
 
 .footer {
-  background-color: #888282;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   text-align: center;
 }
 
@@ -503,6 +497,7 @@
   font-size: 2rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  color: var(--secondary-color);
 }
 
 .footer .footer-container .footer-description {
@@ -515,18 +510,18 @@
 
 .footer .footer-container .footer-social .footer-link {
   font-size: 1.4rem;
-  color: #fff;
+  color: var(--secondary-color);
   margin: 0 0.5rem;
   transition: 0.3s;
 }
 
 .footer .footer-container .footer-social .footer-link:hover {
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .footer .footer-container .footer-copy {
   font-size: 1rem;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 *,
@@ -537,16 +532,30 @@
   padding: 0;
 }
 
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
 html {
   scroll-behavior: smooth;
+  transition: all 0.5s ease-in;
+}
+
+html.dark {
+  --primary-color: #fff;
+  --secondary-color: #333;
+}
+
+html.dark {
+  background-color: #111;
+  color: var(--primary-color);
 }
 
 body {
   margin: 3rem 0 0 0;
   font-size: 1.5rem;
   font-weight: 500;
-  background-color: #333;
-  color: #fff;
   line-height: 1.6;
 }
 
@@ -564,9 +573,22 @@ a {
 }
 
 img {
-  max-width: 100%;
-  margin: auto;
-  display: block;
+  width: 100%;
+}
+
+.toggle {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 100px;
+}
+
+.toggle:focus {
+  outline: none;
 }
 
 .section {
@@ -580,7 +602,6 @@ img {
 
 .section-title {
   font-size: 2rem;
-  color: #fff;
   margin-bottom: 1.5rem;
 }
 
@@ -609,7 +630,7 @@ img {
   left: 0;
   top: 0;
   z-index: 100;
-  background-color: #333;
+  background-color: #000;
 }
 
 .scroll-header {
@@ -620,7 +641,7 @@ img {
 .scroll-header .nav-logo,
 .scroll-header .nav-link,
 .scroll-header .nav-toggle {
-  color: #363434;
+  color: #000;
 }
 
 .scroll-header .nav-menu {
@@ -628,7 +649,7 @@ img {
 }
 
 .scroll-header .nav-menu .nav-link {
-  color: #363434;
+  color: #000;
 }
 
 .scrolltop {
@@ -639,7 +660,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
-  background-color: rgba(235, 29, 63, 0.7);
+  background-color: var(--primary-color);
   border-radius: 0.5rem;
   z-index: 10;
   transition: 0.4s;
@@ -652,7 +673,7 @@ img {
 
 .scrolltop .scrolltop-icon {
   font-size: 1.4rem;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .scrolltop.show-scroll {
@@ -662,24 +683,24 @@ img {
 
 .btn {
   display: inline-block;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 0.75rem;
   border-radius: 0.25rem;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: #333;
+  background-color: #000;
 }
 
 .btn.btn-light {
-  background-color: #fff;
+  background-color: var(--primary-color);
 }
 
 .btn.btn-white {
-  background-color: #fff;
-  color: #333;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .btn.btn-white:hover {

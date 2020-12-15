@@ -9,12 +9,12 @@
     margin-bottom: $mb-3;
 
     .nav-link {
-      color: $text-white;
+      color:$light;
       transition: 0.3s;
       font-size: 2rem;
 
       &:hover {
-        color: $text-white;
+        color:$light;
       }
     }
   }
@@ -24,7 +24,7 @@
   }
   .nav-toggle,
   .nav-logo {
-    color: $text-white;
+    color: $light;
     font-size: 2rem;
   }
 

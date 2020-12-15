@@ -136,3 +136,17 @@ gsap.from('.nav-logo,.nav-toggle', { opacity: 0, duration: 2, delay: 1.5, y: 25 
 
 gsap.from('.nav-item', { opacity: 0, duration: 2, delay: 1.8, y: 25 , ease:'expo.out',stagger:.2})
 gsap.from('.home-social-icon', { opacity: 0, duration: 2, delay: 2.3, y: 25 , ease:'expo.out',stagger:.2})
+
+
+const toggle = document.querySelector('.toggle')
+
+toggle.addEventListener('click', (e) => {
+  const html = document.querySelector('html')
+  if(html.classList.contains('dark')) {
+      html.classList.remove('dark')
+      e.target.innerHTML = 'Dark mode'
+  } else {
+      html.classList.add('dark')
+      e.target.innerHTML = 'Light mode'
+  }
+})

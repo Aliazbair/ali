@@ -2,8 +2,8 @@
 
     .testimonial-content{
         display: grid;
-        background-color: $lighten;
-        color: $text-white;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
         border-radius: .5rem;
         padding: 2rem 1rem;
         text-align: center;
@@ -22,7 +22,7 @@
 
     .testimonial-client{
         font-size: 1.5rem;
-        color: $text-white;
+        color:$light;
         margin-bottom: $mb-2;
     }
 }

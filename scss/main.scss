@@ -20,16 +20,29 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
 html {
   scroll-behavior: smooth;
+  transition: all 0.5s ease-in;
+}
+html.dark {
+  --primary-color: #fff;
+  --secondary-color: #333;
+}
+html.dark {
+  background-color: #111;
+  color: var(--primary-color);
 }
 
 body {
   margin: 3rem 0 0 0;
   font-size: $xxl;
   font-weight: $medium;
-  background-color: $dark;
-  color: $text-white;
+  
+  // color: $light;
   line-height: 1.6;
 }
 h2,
@@ -43,9 +56,23 @@ a {
   text-decoration: none;
 }
 img {
-  max-width: 100%;
-  margin: auto;
-  display: block;
+  width: 100%;
+
+}
+
+.toggle {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 100px;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 // classes
@@ -58,7 +85,7 @@ img {
 }
 .section-title {
   font-size: 2rem;
-  color: $text-white;
+  // color: $light;
   margin-bottom: $mb-3;
 }
 .section-subtitle {
@@ -90,18 +117,18 @@ img {
   background-color: $dark;
 }
 .scroll-header {
-  background-color: $text-white;
+  background-color: $light;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   .nav-logo,
   .nav-link,
   .nav-toggle {
-    color: $text-dark;
+    color: $dark;
   }
   .nav-menu {
     background-color: #fff;
     .nav-link {
-      color: $text-dark;
+      color: $dark;
     }
   }
 }
@@ -115,18 +142,21 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
-  background-color: rgba(235, 29, 63, 0.7);
+  // background-color: rgba(235, 29, 63, 0.7);
+  background-color: var(--primary-color);
+  // color: var(--secondary-color);
+
   border-radius: 0.5rem;
   z-index: $z-tooltip;
   transition: 0.4s;
   visibility: hidden;
 
   &:hover {
-    background-color: $text-white;
+    background-color: $light;
   }
   .scrolltop-icon {
     font-size: 1.4rem;
-    color: $text-white;
+   color: var(--secondary-color);
   }
   &.show-scroll {
     visibility: visible;
@@ -137,8 +167,8 @@ img {
 // button
 .btn {
   display: inline-block;
-  background-color: $dark;
-  color: $text-white;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 0.75rem;
   border-radius: 0.25rem;
   // font-size: 2rem;
@@ -148,19 +178,19 @@ img {
     background-color: $dark;
   }
   &.btn-light {
-    background-color: $text-white;
+    background-color:var(--primary-color); 
   }
   &.btn-white {
-    background-color: $text-white;
-    color: $dark;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 
     &:hover {
-      background-color: $text-white;
+      background-color: $light;
     }
   }
   &.btn-link {
     background-color: transparent;
-    color: $text-white;
+    color: $light;
     padding: 0;
 
     &:hover {
