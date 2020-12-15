@@ -236,8 +236,6 @@
 
 .services .services-data {
   padding: 3rem 1rem;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   border-radius: 0.5rem;
   text-align: center;
   transition: 0.4s;
@@ -281,8 +279,6 @@
 
 .project .project-container {
   padding: 1.5rem 1rem;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   border-radius: .5rem;
   text-align: center;
 }
@@ -327,8 +323,6 @@
 }
 
 .portfolio .portfolio-content {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 4px 6px;
@@ -354,13 +348,11 @@
 
 .portfolio .portfolio-data .portfolio-subtitle {
   font-size: 2rem;
-  color: var(--secondary-color);
 }
 
 .portfolio .portfolio-data .portfolio-title {
   font-size: 1.5rem;
   margin: 1rem 0;
-  color: var(--secondary-color);
 }
 
 .portfolio .active-portfolio {
@@ -381,12 +373,11 @@
 
 .testimonial .testimonial-content {
   display: grid;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   border-radius: .5rem;
   padding: 2rem 1rem;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(47, 10, 13, 0.25);
+  box-shadow: 1px 4px 8px;
+  overflow: hidden;
 }
 
 .testimonial .testimonial-img {
@@ -412,18 +403,11 @@
 }
 
 .contact .contact-container .contact-content .contact-box {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   border-radius: .5rem;
   padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+  box-shadow: 0 1px 4px;
   margin-top: 1rem;
-}
-
-.contact .contact-container .contact-content .contact-box .contact-title, .contact .contact-container .contact-content .contact-box .contact-icon {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
 }
 
 .contact .contact-container .contact-content .contact-box .contact-title {
@@ -432,8 +416,6 @@
 }
 
 .contact .contact-container .contact-content .contact-box .contact-icon {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   font-size: 1.25rem;
   margin: 0 0.5rem;
 }
@@ -452,16 +434,12 @@
 .contact .contact-container .contact-input, .contact .contact-container .contact-btn {
   outline: none;
   font-size: 1.1rem;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
 }
 
 .contact .contact-container .contact-input {
   width: 100%;
   padding: 1rem;
   border: 2px solid;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   border-radius: .5rem;
   margin-bottom: 0.5rem;
 }

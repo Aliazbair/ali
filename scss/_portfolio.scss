@@ -14,8 +14,6 @@
   }
   // portfolio-content
   .portfolio-content {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 4px 6px ;
@@ -38,15 +36,13 @@
 
     .portfolio-subtitle {
       font-size: 2rem;
-      // color:  red;
-      color: var(--secondary-color);
+   
     }
 
     .portfolio-title {
       font-size: 1.5rem;
       margin: $mb-2 0;
-      // color: red;
-      color: var(--secondary-color);
+     
     }
   }
 

@@ -2,12 +2,11 @@
 
     .testimonial-content{
         display: grid;
-        background-color: var(--primary-color);
-        color: var(--secondary-color);
         border-radius: .5rem;
         padding: 2rem 1rem;
         text-align: center;
-        box-shadow: 0 4px 8px rgba(47,10,13,.25);
+        box-shadow: 1px 4px 8px ;
+        overflow: hidden;
 
        
     }
