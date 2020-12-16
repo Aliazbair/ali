@@ -525,7 +525,7 @@
     height: 60vh;
   }
   .content {
-    top: 20%;
+    top: 9%;
     margin-top: 5px;
   }
   .content .logo {
@@ -533,16 +533,10 @@
     width: 140px;
     border-radius: 50%;
   }
-  .content .text {
-    display: none;
-  }
 }
 
 /* landscape */
 @media (max-height: 500px) {
-  .content .title, .content .text {
-    display: none;
-  }
   .content {
     top: 0;
   }
