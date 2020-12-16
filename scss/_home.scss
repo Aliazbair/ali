@@ -1,10 +1,8 @@
-
 .home {
   .home-container {
     display: grid;
     grid-template-columns: repeat(1fr);
     gap: 1rem;
- 
 
     .home-data {
       border-left: 4px solid;
@@ -13,7 +11,6 @@
       margin-left: 0.5rem;
       margin-top: 1rem;
       margin-bottom: 3rem;
-      
 
       .home-name {
         font-size: 2rem;
@@ -31,12 +28,11 @@
         font-weight: bold;
       }
     }
-    .home-img{
-   
-        // border:1px solid #ccc;
-        // display: block;
-        // border-radius: 10px;
-        // overflow: hidden;
+    .home-img {
+      // border:1px solid #ccc;
+      // display: block;
+      // border-radius: 10px;
+      // overflow: hidden;
     }
 
     // home social
@@ -62,8 +58,8 @@
     .home-container {
       grid-template-columns: repeat(2, 1fr);
 
-      .home-data{
-          margin-top: 0;
+      .home-data {
+        margin-top: 0;
       }
     }
   }
