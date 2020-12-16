@@ -1,63 +1,4 @@
-// .home{
-//     overflow: hidden;
-//     .home-container{
-//         position: relative;
-//         height: calc(100vh - 1rem);
-//         grid-template-rows: repeat(2, max-content);
-//         align-content: space-around;
-//         row-gap: 1rem;
 
-//         // home-data
-//         .home-data{
-//             border-left: 4px solid ;
-//             padding-left: 1.5rem;
-//             z-index: $z-tooltip;
-//            margin-left: .50rem;
-
-//             .home-name{
-//                 font-size: 2rem;
-//             }
-//             .home-greeting{font-size: 1rem;}
-//             .home-profession{font-size: 1rem; margin-bottom: 1rem;}
-//             .home-greeting,.home-profession{
-//                 display: block;
-//                 font-weight: bold;
-
-//             }
-//         }
-
-//         // HOME IMAGE
-//         .home-img{
-//             position: absolute;
-//             right: 0;
-//             bottom: 0px;
-//             img{
-//                 width: 200px;
-//                 // border-radius: 10px;
-//             }
-//         }
-
-//         // home social
-//         .home-social{
-//             display: flex;
-//             flex-direction: column;
-
-//             .home-social-icon{
-//                 width: max-content;
-//                 font-size: 1.3rem;
-//                 margin-bottom: $mb-2;
-//                 color: $icon;
-//                 padding-left: .80rem;
-//                 &:hover{
-//                    color:  $hover;
-//                 }
-//             }
-//         }
-//     }
-//     @media screen and (min-width: 576px) {
-//         .home-img{width:330px ;}
-//       }
-// }
 .home {
   .home-container {
     display: grid;
@@ -71,6 +12,7 @@
       z-index: $z-tooltip;
       margin-left: 0.5rem;
       margin-top: 1rem;
+      margin-bottom: 3rem;
       
 
       .home-name {
