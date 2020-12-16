@@ -1,6 +1,4 @@
 .footer {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   text-align: center;
 
   .footer-container {
@@ -10,8 +8,6 @@
       font-size: 2rem;
       margin-bottom: $mb-1;
       font-weight: bold;
-      // background-color: var(--primary-color);
-      color: var(--secondary-color);
     }
 
     // footer-description
@@ -27,13 +23,12 @@
       // footer-link
       .footer-link {
         font-size: 1.4rem;
-        color: var(--secondary-color);
+        // color: var(--secondary-color);
         margin: 0 $mb-1;
         transition: 0.3s;
 
         &:hover {
-          // background-color: var(--primary-color);
-          color: var(--secondary-color);
+          color: $hover;
         }
       }
     }
@@ -41,8 +36,6 @@
     // footer-copy
     .footer-copy {
       font-size: 1rem;
-    
-      color: var(--secondary-color);
     }
   }
 }
