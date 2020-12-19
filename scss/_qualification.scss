@@ -1,6 +1,6 @@
 .qualification {
   margin: 1rem;
-  
+
   // qualification-containeer
   .qualification-container {
     row-gap: 2.5rem;
@@ -22,40 +22,41 @@
   // qualification-box
   .qualification-box {
     padding-bottom: 1rem;
-    border-bottom: 3px solid;
+    border-bottom: 1px dashed;
   }
 
   //qualification-area
-  .qualification-area{
-      font-size: 1.2rem;
-      margin-bottom: $mb-1;
-      font-weight: bold;
-      color: $icon;
-
+  .qualification-area {
+    font-size: 1.2rem;
+    margin-bottom: $mb-1;
+    font-weight: bold;
+    color: $icon;
   }
-  .qualification-icon, .qualification-work{
-      font-size: 1.1rem;
-  
-
+  .qualification-icon,
+  .qualification-work {
+    font-size: 1.1rem;
   }
-  .qualification-work{
-      display: block;
+  .qualification-icon {
+    color: $icon;
+  }
+  .qualification-work {
+    display: block;
   }
   @media screen and (min-width: 576px) {
-    .qualification-container{
-      grid-template-columns: repeat(2,1fr);
+    .qualification-container {
+      grid-template-columns: repeat(2, 1fr);
     }
-}
-
-@media screen and (min-width: 768px) {
-   .qualification-box{
-     display:flex ;
-     justify-content: space-between;
-   }
-}
-@media screen and (min-width: 1024px) {
-  .qualification-container{
-    column-gap: 6rem;
   }
-}
+
+  @media screen and (min-width: 768px) {
+    .qualification-box {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .qualification-container {
+      column-gap: 6rem;
+    }
+  }
 }

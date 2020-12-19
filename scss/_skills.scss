@@ -1,0 +1,56 @@
+.skills-container{
+  
+    row-gap: 2rem;
+}
+.skills-subtitle{
+    font-size: 1.5rem;
+    color: $icon;
+    margin-bottom: 1rem;
+   padding-left: 1rem;
+}
+.skills-data{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+    margin-bottom: 2rem;
+}
+.skills-name{
+    text-transform: uppercase;
+}
+.skills-bar{
+    position: absolute;
+    bottom: -.57rem;
+    height: .25rem;
+    background-color:$title-color;
+}
+.skills-html{
+    width: 80%;
+}
+.skills-vuejs{
+    width: 70%;
+}
+.skills-boostrap{
+    width: 90%;
+}
+.skills-react{
+    width: 90%;
+}
+.skills-Taiwlind{
+    width: 50%;
+}
+.skills-php{
+    width: 80%;
+}
+.skills-js{
+    width: 80%;
+}
+.skills-node{
+    width: 70%;
+}
+.skills-Python{
+    width: 80%;
+}
+.skills-firebase{
+    width: 50%;
+}

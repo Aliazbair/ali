@@ -1,6 +1,6 @@
 .footer {
   text-align: center;
-
+  box-shadow: 0px 1px 2px 2px rgb(167, 163, 163);
   .footer-container {
     padding: 3rem 0;
 
@@ -8,6 +8,7 @@
       font-size: 2rem;
       margin-bottom: $mb-1;
       font-weight: bold;
+      color: $title-color;
     }
 
     // footer-description
@@ -23,7 +24,7 @@
       // footer-link
       .footer-link {
         font-size: 1.4rem;
-        // color: var(--secondary-color);
+        color:$icon;
         margin: 0 $mb-1;
         transition: 0.3s;
 

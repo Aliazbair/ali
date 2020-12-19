@@ -23,8 +23,13 @@
     }
     .about-img{
         justify-self: center;
-        width: 220px;
-        border-radius: .5rem;
+      img{
+          width: 15rem;
+          height: 15rem;
+          border-radius: 50%;
+      }
+
+        
     }
 
     @media screen and (min-width: 576px) {
@@ -32,9 +37,15 @@
             grid-template-columns: repeat(2,1fr);
 
             .about-img{
-                width: 100%;
-                object-fit: cover;
-                height: 80%;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    height: 90%;
+                    border-radius: 5px;
+                    display: block;
+                   
+
+                }
             }
         }
       }
