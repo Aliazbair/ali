@@ -15,12 +15,11 @@
         margin-top: 1rem;
 
         // contact-title & ico
-        .contact-title,
-        .contact-icon {
-        }
+       
         .contact-title {
           font-size: 1.9rem;
           margin: $mb-1;
+          color: $title-color;
         }
         .contact-icon {
           font-size: 1.8rem;

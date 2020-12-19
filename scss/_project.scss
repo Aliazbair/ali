@@ -8,10 +8,12 @@
         // padding: 2rem;
         box-shadow: 0px 1px 2px 2px rgb(167, 163, 163);
     }
-
+       .project-icon{ color: $icon;}
+       .project-title{ color: $title-color;}
         .project-icon,.project-title{
             margin-bottom: 1rem;
             font-size: 2rem;
+           
             
             
         }

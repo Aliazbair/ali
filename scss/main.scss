@@ -83,6 +83,7 @@ img {
 .section-title,
 .section-subtitle {
   text-align: center;
+  color: $icon;
 }
 .section-title {
   font-size: 2rem;
@@ -91,7 +92,7 @@ img {
 }
 .section-subtitle {
   display: block;
-  font-size: $sm;
+  font-size: 1.1rem;
   font-weight: $semi-bold;
   text-align: center;
 }

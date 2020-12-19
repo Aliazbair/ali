@@ -12,6 +12,7 @@
     margin-bottom: $mb-2;
     display: flex;
     align-items: center;
+    color: $title-color;
 
     .qualification-icon {
       font-size: 1.5rem;
@@ -28,7 +29,8 @@
   .qualification-area{
       font-size: 1.2rem;
       margin-bottom: $mb-1;
-      font-weight: $medium;
+      font-weight: bold;
+      color: $icon;
 
   }
   .qualification-icon, .qualification-work{

@@ -7,7 +7,7 @@
 .showcase{
     background: rgba(0, 0, 0, 0.9);
         margin: 0;
-        color: #fff;
+        color: $title-color;
 }
   .showcase::after{
       content:'';
@@ -46,8 +46,10 @@
       overflow: hidden;
   }
   .content .title{
-      font-size: 2.2rem;
-      margin-top: 1rem;
+      transform: translate(0px, 0px);
+      opacity: 1;
+      font-size: 1.5rem;
+      margin-top: 3rem;
   }
   .content .text{
       line-height: 1.7;
@@ -58,16 +60,19 @@
   @media (max-width:560px){
       .showcase::after{
           height: 60vh;
+
       }
       .content{
           top: 9%;
           margin-top: 5px;
+       
       }
-      .content .logo{
-          height: 140px;
-          width: 140px;
-          border-radius: 50%;
-      }
+  
+    //   .content .logo{
+    //       height: 140px;
+    //       width: 140px;
+    //       border-radius: 50%;
+    //   }
       .content .text{
         //   display: none;
       }

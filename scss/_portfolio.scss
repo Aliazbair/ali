@@ -33,16 +33,19 @@
   }
   .portfolio-data {
     padding: 1.5rem;
+    text-align: center;
  
     .portfolio-subtitle {
       font-size: 2rem;
-      color: --primary-color;
+      color: $title-color;
+  
     }
 
     .portfolio-title {
       font-size: 1.5rem;
       margin: $mb-2 0;
     color: rgb(110, 109, 109);
+    text-align: left;
     }
   }
 
