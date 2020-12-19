@@ -614,8 +614,8 @@
 
 .skills-bar {
   position: absolute;
-  bottom: -.57rem;
-  height: .25rem;
+  bottom: -0.57rem;
+  height: 0.25rem;
   background-color: orange;
 }
 
@@ -657,6 +657,12 @@
 
 .skills-firebase {
   width: 50%;
+}
+
+@media screen and (min-width: 576px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .footer {
