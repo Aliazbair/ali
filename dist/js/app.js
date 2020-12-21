@@ -136,7 +136,7 @@ gsap.from('.title,.btn', { opacity: 0, duration: 2, delay: 1, y: 25 , ease:'expo
 gsap.from('.nav-logo,.nav-toggle', { opacity: 0, duration: 2, delay: 1.5, y: 25 , ease:'expo.out',stagger:.2})
 
 gsap.from('.nav-item', { opacity: 0, duration: 2, delay: 1.8, y: 25 , ease:'expo.out',stagger:.2})
-// gsap.from('.home-social-icon', { opacity: 0, duration: 2, delay: 2.3, y: 25 , ease:'expo.out',stagger:.2})
+gsap.from('.home-social-link', { opacity: 0, duration: 2, delay: 2.3, y: 25 , ease:'expo.out',stagger:.2})
 
 
 const toggle = document.querySelector('.toggle')
